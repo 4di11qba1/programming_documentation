@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Python | Variables & Constants</title>
+    <style>
+      @media only screen and (max-width: 600px){
+        nav{width: 100%;}
+        .column{width: 100%;}
+        .btn{width: 100%;}
+        .btn:hover{width: 100%;}
+        .dropbtn1{width: 100%;}
+        .dropdown1{width: 100%;}
+        .dropdown1-content{width: 100%;}
+        .dropdown1:hover .dropbtn1{width: 100%;}
+        }
+        body {
+            font-family:arial;
+            margin-right: 10%;
+            background: url(../Background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            }
+            * {
+            box-sizing: border-box;
+        }
+
+    nav {
+        background-color:rgba(0,0,0,0.25);
+            }
+    p{margin: 25px;}
+    h1{margin: 25px;}
+    h2{margin: 25px;}
+    h3{margin: 25px;}
+    .column {
+  float: left;
+  padding: 10px;
+  height:auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.code{
+  font-weight: bold;
+  color: #4682B4;
+  font-size: 4;
+  }
+  .syntax{
+    font-weight: 800;
+    font-style: oblique;
+    font-size: larger;
+    color: #4682B4;
+    }
+    .btn {background-color: transparent;
+    color: white;
+    border: none;
+    font-family: segoe ui;
+    font-weight: bolder;
+    padding: 15px;
+    width: 100%;
+    }        
+    .btn:hover {background-color: rgb(15, 140, 241);
+    color: white;
+    border: none;
+    transition: all 0.25s;
+    }
+</style>
+  </head>
+    <body>
+      <div class="row">
+      <div class="column" style="width: 20%;">
+      <table width="16%" style="position: fixed; background-color: rgba(0,0,0,0.25);">
+        <tr><td><img src="../Logo.jpg" width="100%"></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='../Home Page.html'">Home &#127968</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Intro.html'">Introduction</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Python VS Ruby.html'">Python VS Ruby</button></td></tr>
+        <tr><td><font face="arial" color="#4682B4" style=" padding:15px; font-weight:800; font-style: oblique;"><center>Variables & Constants</center></font></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Data Types.html'">Data Types</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Statements.html'">Statements</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Functions.html'">Functions</button></td></tr>
+        </table>
+        </div>
+        <div class="column" style="width: 80%;">
+          <nav>
+            <ul>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../HTML/Intro.html'">HTML</button></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../C++/Intro.html'">C++</button></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../JavaScript/Intro.html'">JavaScript</button></li>
+              <li style="display: inline;"><font face="arial" color="#4682B4" style=" padding:15px; font-weight: bolder; font-style: oblique;">Python</font></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../Contact.html'">Contact &#9742</button></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../About.html'">About Us</button></li>
+            </ul>
+          </nav>
+        <h1><u>Python Variables and Constants</u></h1> 
+        <h2>Creating Variables</h2> 
+        <p>Variables are containers for storing data values.<br>
+          Unlike other programming languages, Python has no command for declaring a variable.<br>
+          A variable is created the moment you first assign a value to it.
+        </p>
+        <p><span class="syntax">x = 5<br>
+          y = "John"<br>
+          print(x)<br>
+          print(y)</span>
+        </p>
+        <p>Variables do not need to be declared with any particular type and can even change type after they have been set.</p>
+        <p>String variables can be declared either by using single or double quotes:</p>
+        <p><span class="syntax">x = "John"<br>
+          # is the same as<br>
+          x = 'John'</span>
+        </p>
+        <h2>Variable Names</h2>
+        <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).</p>
+        <p>Rules for Python variables:</p>
+        <ul>
+          <li>A variable name must start with a letter or the underscore character</li>
+          <li>A variable name cannot start with a number</li>
+          <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+          <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+        </ul>
+        <p>Remember that variable names are case-sensitive</p>
+        <h2>Assign Value to Multiple Variables</h2>
+        <p>Python allows you to assign values to multiple variables in one line:</p>
+        <p><span class="syntax">x, y, z = "Orange", "Banana", "Cherry"<br>
+          print(x)<br>
+          print(y)<br>
+          print(z)</span>
+        </p>
+        <p>You can also assign the same value to multiple variables in on line.</p>
+        <h2>Output Variables</h2>
+        <p>The Python <span class="code">print</span> statement is often used to output variables.<br>
+          To combine both text and a variable, Python uses the + character:
+        </p>
+        <h3>Example</h3>
+        <p><span class="syntax">x = "awesome"<br>
+           print("Python is " + x)</span>
+        </p>
+        <h2>Global Variables</h2>
+        <p>Variables that are created outside of a function (as in all of the examples above) are known as global variables.<br>
+          Global variables can be used by everyone, both inside of functions and outside.
+        </p>
+        <h3>Example</h3>
+        <p>Create a variable outside of a function, and use it inside the function</p>
+        <p><span class="syntax">x = "awesome"<br><br>
+          def myfunc():<br>
+            print("Python is " + x)<br><br>
+          myfunc()</span>
+        </p>
+        <p>If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function.<br> The global variable with the same name will remain as it was, global and with the original value.</p>
+        <h2>The global Keyword</h2>
+        <p>Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.<br>
+           To create a global variable inside a function, you can use the <span class="code">global</span> keyword.
+        </p>
+        <h3>Example</h3>
+        <p>If you use the global keyword, the variable belongs to the global scope:</p>
+        <p><span class="syntax">def myfunc():<br>
+          global x<br>
+          x = "fantastic"<br><br>
+          myfunc()<br><br>
+          print("Python is " + x)</span>
+        </p>
+        <h2>Python Constants</h2>
+            <p>In Python, constants are declared with const keyword and assigned at the time of the declaration. Constants are read-only, therefore you can not modify them later on.<br>Naming a constant in Python follow the same rule of naming a variable,just write the name and assign a value, even for global constants.</p>
+      </div>
+      </div>  
+    </body>
+</html>

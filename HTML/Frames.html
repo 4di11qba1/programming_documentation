@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>HTML | Frames</title>
+    <style>
+      @media only screen and (max-width: 600px){
+        nav{width: 100%;}
+        .column{width: 100%;}
+        .btn{width: 100%;}
+        .btn:hover{width: 100%;}
+        .dropbtn1{width: 100%;}
+        .dropdown1{width: 100%;}
+        .dropdown1-content{width: 100%;}
+        .dropdown1:hover .dropbtn1{width: 100%;}
+        }
+        body {
+            font-family:arial;
+            margin-right: 10%;
+            background: url(../Background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            }
+            * {
+            box-sizing: border-box;
+        }
+
+    nav {
+        background-color:rgba(0,0,0,0.25);
+            }
+    p{margin: 25px;}
+    h1{margin: 25px;}
+    h2{margin: 25px;}
+    h3{margin: 25px;}
+    .column {
+  float: left;
+  padding: 10px;
+  height:auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.code{
+  font-weight: bold;
+  color: #4682B4;
+  font-size: 4;
+  }
+  .syntax{
+    font-weight: 800;
+    font-style: oblique;
+    font-size: larger;
+    color: #4682B4;
+    }
+    .btn {background-color: transparent;
+    color: white;
+    border: none;
+    font-family: segoe ui;
+    font-weight: bolder;
+    padding: 15px;
+    width: 100%;
+    }        
+    .btn:hover {background-color: rgb(15, 140, 241);
+    color: white;
+    border: none;
+    transition: all 0.25s;
+    }
+</style>
+  </head>
+    <body>
+      <div class="row">
+      <div class="column" style="width: 20%;">
+      <table width="16%" style="position: fixed; background-color: rgba(0,0,0,0.25);">
+        <tr><td><img src="../Logo.jpg" width="100%"></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='../Home Page.html'">Home &#127968</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Intro.html'">Introduction</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Lists.html'">Lists</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Graphics.html'">Graphics</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Tables.html'">Tables</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Linking.html'">Linking</button></td></tr>
+        <tr><td><font face="arial" color="#4682B4" style=" padding:15px; font-weight:800; font-style: oblique;"><center>Frames</center></font></td></tr>
+        </table>
+        </div>
+        <div class="column" style="width: 80%;">
+          <nav>
+            <ul>
+                <li style="display: inline;"><font face="arial" color="#4682B4" style=" padding:15px; font-weight: bolder; font-style: oblique;">HTML</font></li>
+                <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../C++/Intro.html'">C++</button></li>
+                <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../JavaScript/Intro.html'">JavaScript</button></li>
+                <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../Python/Intro.html'">Python</button></li>
+                <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../Contact.html'">Contact &#9742</button></li>
+                <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../About.html'">About Us</button></li>
+            </ul>
+          </nav>
+          <h1><u>HTML Frames</u></h1>
+          <h2>FRAMESET TAG</h2>
+          <p>HTML also allows the webpages to be split into more than one parts. For this purpose we use <span class="code">(frameset)(frame) (/frame)(/frameset)</span> tags.</p>
+          <h3>FrameSet Attributes</h3>
+          <table border="1" style="margin-left: 25px;">
+            <tr><th>Attribute</th><th>Description</th></tr>
+            <tr><td>ROWS</td><td>Divides the screen into multiple rows. It can be set equal to a list of values. Depending on the required size of each row. The values can be:
+              <ul>
+                <li>A number of pixels</li>
+                <li>Expressed as percentage</li>
+              </ul>
+            </td></tr>
+            <tr><td>COLS</td><td>Divides the screen into multiple columns. It can be set equal to a list of values. Depending on the required size of a each column. The values can be:
+              <ul>
+                <li>A number of pixels</li>
+                <li>Expressed as percentage</li>
+              </ul>
+            </td></tr>
+          </table>
+          <h2>FRAME TAG</h2>
+          <p>Once the screen is divided into 2 or more parts each frame can open a specific page of a website. This can be achieved by using <span class="code">(frame) (/frame)</span> tag.</p>
+          <h3>Frame Attributes</h3>
+          <table border="1" style="margin-left: 25px;">
+            <tr><th>Attribute</th><th>Description</th></tr>
+            <tr><td>SRC="url"</td><td>URL of the document</td></tr>
+            <tr><td>MARGINHEIGHT=n</td><td>Specifies the document to be at left at the top and bottom of the page</td></tr>
+            <tr><td>MARGINWIDTH=n</td><td>Specifies the document to be at left along the sides of the page</td></tr>
+            <tr><td>NAME="name"</td><td>Gives the frame a unique name so that it can be targeted by other documents</td></tr>
+            <tr><td>NORESIZE</td><td>Disables the frame resizing capability</td></tr>
+            <tr><td>SCROLLING</td><td>Controls the appearance of horizontal and vertical scrollbars in a frame</td></tr>
+          </table>
+          <p>The following code demonstrate the use of <span class="code">(frameset) and (frame)</span> tags.</p>
+          <h3>Coding</h3>
+          <p><span class="syntax">(frameset rows="30%,*")<br>
+            (frameset cols="50%, 50%" )<br>
+            (frame src="filel.html")<br>
+            (frame src="fi1e2.htm1")<br>
+            ( / frameset)<br>
+            (frameset cols="50%,50%")<br>
+            (frame src="file3.html")<br>
+            (frame src="file4.html")<br>
+            (/frame)<br>
+            ( / frameset)<br>
+            ( / frameset)</span>
+          </p>
+          <h3>Output</h3>
+          <img src="Frames IMGs/Frames Output.png" width="70%" style="margin-left: 25px;">
+          <p>The screen is distributed into 4 frames.</p>
+        </div>
+    </body>
+</html>

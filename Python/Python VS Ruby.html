@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Python VS Ruby</title>
+    <style>
+      @media only screen and (max-width: 600px){
+        nav{width: 100%;}
+        .column{width: 100%;}
+        .btn{width: 100%;}
+        .btn:hover{width: 100%;}
+        .dropbtn1{width: 100%;}
+        .dropdown1{width: 100%;}
+        .dropdown1-content{width: 100%;}
+        .dropdown1:hover .dropbtn1{width: 100%;}
+        }
+        body {
+            font-family:arial;
+            margin-right: 10%;
+            background: url(../Background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            }
+            * {
+            box-sizing: border-box;
+        }
+
+    nav {
+        background-color:rgba(0,0,0,0.25);
+            }
+    p{margin: 25px;}
+    h1{margin: 25px;}
+    h3{margin: 25px;}
+    .column {
+  float: left;
+  padding: 10px;
+  height:auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    .btn {background-color: transparent;
+    color: white;
+    border: none;
+    font-family: segoe ui;
+    font-weight: bolder;
+    padding: 15px;
+    width: 100%;
+    }        
+    .btn:hover {background-color: rgb(15, 140, 241);
+    color: white;
+    border: none;
+    transition: all 0.25s;
+    }
+</style>
+  </head>
+    <body>
+      <div class="row">
+      <div class="column" style="width: 20%;">
+      <table width="16%" style="position: fixed; background-color: rgba(0,0,0,0.25);">
+        <tr><td><img src="../Logo.jpg" width="100%"></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='../Home Page.html'">Home &#127968</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Intro.html'">Introduction</button></td></tr>
+        <tr><td><font face="arial" color="#4682B4" style=" padding:15px; font-weight:800; font-style: oblique;"><center>Python VS Ruby</center></font></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Variables & Constants.html'">Variables & Constants</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Data Types.html'">Data Types</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Statements.html'">Statements</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Functions.html'">Functions</button></td></tr>
+        </table>
+        </div>
+        <div class="column" style="width: 80%;">
+          <nav>
+            <ul>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../HTML/Intro.html'">HTML</button></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../C++/Intro.html'">C++</button></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../JavaScript/Intro.html'">JavaScript</button></li>
+              <li style="display: inline;"><font face="arial" color="#4682B4" style=" padding:15px; font-weight: bolder; font-style: oblique;">Python</font></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../Contact.html'">Contact &#9742</button></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../About.html'">About Us</button></li>
+            </ul>
+          </nav>
+          <h1><u>Python VS Ruby</u></h1>
+          <p>Python and Ruby are a new generation, high-level, server-side scripting languages focusing on simpler, crispier and high-performance codes. Python was developed organically in the scientific community as a prototyping language that could easily be translated into C++ if a prototype worked. Python envisages a direct approach to programming. In Python, there is only one “best” way to do something. Ruby lays focus on “human-language” programming, and its code reads like a verbal language rather than a machine-based one, which makes Ruby popular among programmers, both beginners and experts, alike.</p>
+          <p><b>Let us study much more about Python and Ruby in detail:</b></p>
+          <ul>
+            <li>These are widely used for developing web apps and prototypes, thanks to their standard libraries, persistence support and feature-packed frameworks—Python’s Django framework, and Ruby’s Ruby on Rails. Both Python and Ruby have interpreted scripting languages unlike Java, C++ and other compiled languages. Although, compiled languages tend to run comparatively faster.</li>
+            <li>Ruby on Rails is somewhat more popular as a web development tool than Django-Python. Python is favored more in the academic and scientific parlance. Python aims to make everything obvious to the programmer.</li>
+            <li>It happened long before it was first used for web development. Ruby, on the other hand, became a major player specifically because of web development. The Rails framework extended Ruby’s popularity with people developing complex websites.</li>
+            <li>Ruby follows the principle of “least astonishment,” and offers myriad ways to do the same thing. These similar methods can have multiple names, which many developers find confusing and frustrating.</li>
+          </ul>
+          <p><b>Below are the lists of points, describe the key Difference between Python and Ruby:</b></p>
+          <ul>
+            <li>Python has rich built-in data types in the form of list, tuple, set and dictionary while Ruby has array and hash as equivalents to Python’s list and dictionary.</li>
+            <li>Python’s approach to avoiding namespace collision is to give each file its own namespace, which is achieved by modules, nested functions, and classes. In contrast, Ruby’s approach is more collision-prone.</li>
+            <li>The use of iterators is central to the Python’s programming and blends naturally with the language features whereas iterators in Ruby are not that significant and seldom used.</li>
+            <li>Python distinguishes between “Unicode strings” which are collections of code-points and “byte-strings” which are classical bags of bytes with no determined encoding, which can be converted to a Unicode string by explicitly stating an encoding to parse with. On the other hand, Ruby treats all strings as byte-strings with a semi-hidden flag to tell what encoding they’re stored with.</li>
+            <li>The idea behind Python nested function is that you can nest defs to define functions that can only be used within the scope of another enclosing function. This is terrifically useful. When Ruby encounters nested defs, it defines a new function on the class of object the enclosing function was called on which is not so important.</li>
+            <li>Ruby has three classes for dealing with dates and times. Date stores a date as a year–month–day tuple; DateTime stores a date and time together; Time also stores a date and time. The difference between Time and DateTime is that the former is built into the language, and stores the date-time as a POSIX timespec, whereas the latter is in stdlib, meaning it comes with the language but isn’t loaded automatically, and it implements the Gregorian calendar “properly” (counting days since some arbitrary epoch nobody cares about, and adding time-of-day on top of that.). Python also has an awareness of the ‘naive’ vs. ‘aware’ date-time objects, the former having no conception of the existence of time zones and the latter being extensible to allow support for e.g. the IANA tz database for full historical timezone awareness.</li>
+            <li>Ruby’s IO.select is nice and simple, but inflexible. Python provides a whole library of interfaces to various UNIX/POSIX variants of multiplexed I/O system calls. Python also has an interface to the BSD kqueue system calls, which Ruby lacks. On the downside, IO.select, contrary to its name, sensibly picks either select or poll depending on which is most suited to the situation; Python makes you choose for yourself.</li>
+            <li>Ruby’s blocks are simpler and elegant. In comparison, Python tries to work around this by using decorators, classes, and first-class functions still lag far behind.</li>
+            <li>List comprehensions are more readable and comprehensible in Ruby than in Python. For example, Ruby’s variant looks like (0..99).select {|x| x % 2 == 0 }.map {|x| x ** 2 } is easier to understand than the Python’s [(x ** 2) for x in range(100) if (x % 2 is 0)].</li>
+          </ul>
+      </div>
+    </body>
+</html>

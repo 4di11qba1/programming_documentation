@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>JS | Variables & Constants</title>
+    <style>
+      @media only screen and (max-width: 600px){
+        nav{width: 100%;}
+        .column{width: 100%;}
+        .btn{width: 100%;}
+        .btn:hover{width: 100%;}
+        .dropbtn1{width: 100%;}
+        .dropdown1{width: 100%;}
+        .dropdown1-content{width: 100%;}
+        .dropdown1:hover .dropbtn1{width: 100%;}
+        }
+        body {
+            font-family:arial;
+            margin-right: 10%;
+            background: url(../Background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            }
+            * {
+            box-sizing: border-box;
+        }
+
+    nav {
+        background-color:rgba(0,0,0,0.25);
+            }
+    p{margin: 25px;}
+    h1{margin: 25px;}
+    h2{margin: 25px;}
+    h3{margin: 25px;}
+    .column {
+  float: left;
+  padding: 10px;
+  height:auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.code{
+  font-weight: bold;
+  color: #4682B4;
+  font-size: 4;
+  }
+  .syntax{
+    font-weight: 800;
+    font-style: oblique;
+    font-size: larger;
+    color: #4682B4;
+    }
+    .btn {background-color: transparent;
+    color: white;
+    border: none;
+    font-family: segoe ui;
+    font-weight: bolder;
+    padding: 15px;
+    width: 100%;
+    }        
+    .btn:hover {background-color: rgb(15, 140, 241);
+    color: white;
+    border: none;
+    transition: all 0.25s;
+    }
+</style>
+  </head>
+    <body>
+      <div class="row">
+      <div class="column" style="width: 20%;">
+      <table width="16%" style="position: fixed; background-color: rgba(0,0,0,0.25);">
+        <tr><td><img src="../Logo.jpg" width="100%"></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='../Home Page.html'">Home &#127968</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Intro.html'">Introduction</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='JavaScript & Java.html'">JavaScript VS Java</button></td></tr>
+        <tr><td><font face="arial" color="#4682B4" style=" padding:15px; font-weight:800; font-style: oblique;"><center>Variables & Constants</center></font></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Data Types.html'">Data Types</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Statements.html'">Statements</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Types of Functions.html'">Function Types</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Function Declaration.html'">Function Declaration</button></td></tr>
+        </table>
+        </div>
+        <div class="column" style="width: 80%;">
+          <nav>
+            <ul>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../HTML/Intro.html'">HTML</button></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../C++/Intro.html'">C++</button></li>
+              <li style="display: inline;"><font face="arial" color="#4682B4" style=" padding:15px; font-weight: bolder; font-style: oblique;">JavaScript</font></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../Python/Intro.html'">Python</button></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../Contact.html'">Contact &#9742</button></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../About.html'">About Us</button></li>
+            </ul>
+          </nav>
+          <h1><u>JavaScript Variables & Constants</u></h1>
+          <h2>JavaScript Variables</h2>
+          <p>JavaScript variables are containers for storing data values.<br>
+            In this example, <span class="code">x, y</span>, and <span class="code">z</span>, are variables:
+          </p>
+          <p><span class="syntax">var x = 5;<br>
+              var y = 6;<br>
+              var z = x + y;<br></span>
+          </p>
+          <p>From the example above, you can expect:
+            <ul>
+              <li>x stores the value 5</li>
+              <li>y stores the value 6</li>
+              <li>z stores the value 11</li>
+            </ul>
+          </p>
+          <h3>JavaScript Identifiers</h3>
+          <p>All JavaScript variables must be identified with unique names.<br>
+
+            These unique names are called identifiers.<br>
+            Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).<br>
+            The general rules for constructing names for variables (unique identifiers) are:
+            <ul>
+              <li>Names can contain letters, digits, underscores, and dollar signs.</li>
+              <li>Names must begin with a letter</li>
+              <li>Names can also begin with $ and _</li>
+              <li>Names are case sensitive (y and Y are different variables)</li>
+              <li>Reserved words (like JavaScript keywords) cannot be used as names</li>
+            </ul>
+          </p>
+          <h3>The Assignment Operator</h3>
+          <p>In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator.<br>
+            This is different from algebra. The following does not make sense in algebra:
+          <span class="syntax">x = x + 5</span>
+          </p>
+          <p>In JavaScript, however, it makes perfect sense: it assigns the value of x + 5 to x.<br>
+            (It calculates the value of x + 5 and puts the result into x. The value of x is incremented by 5.)
+          </p>
+          <p>The "equal to" operator is written like == in JavaScript.</p>
+          <h3>Declaring (Creating) JavaScript Variables</h3>
+          <p>Creating a variable in JavaScript is called "declaring" a variable.<br>
+            You declare a JavaScript variable with the <span class="code">var</span> keyword:
+          </p>
+          <p><span class="syntax">var carName = "Volvo";</span></p>
+          <p>In the example above, we create a variable called <span class="code">carName</span> and assign the value "Volvo" to it.</p>
+          <h3>One Statement, Many Variables</h3>
+          <p>You can declare many variables in one statement.<br>
+            Start the statement with <span class="code">var</span> and separate the variables by comma:
+            <p><span class="syntax">var person = "John Doe", carName = "Volvo", price = 200;</span></p>
+            <h2>JavaScript Constants</h2>
+            <p>In JavaScript, constants are declared with const keyword and assigned at the time of the declaration. Constants are read-only, therefore you can not modify them later on.</p>
+            <p>Naming a constant in JavaScript follow the same rule of naming a variable except that the const keyword is always required, even for global constants.<br>
+              If the keyword is omitted, the identifier is assumed to represent a variable.</p>
+        </div>
+    </body>
+</html>

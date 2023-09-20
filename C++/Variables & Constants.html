@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>C++ | Variables & Constants</title>
+    <style>
+      @media only screen and (max-width: 600px){
+        nav{width: 100%;}
+        .column{width: 100%;}
+        .btn{width: 100%;}
+        .btn:hover{width: 100%;}
+        .dropbtn1{width: 100%;}
+        .dropdown1{width: 100%;}
+        .dropdown1-content{width: 100%;}
+        .dropdown1:hover .dropbtn1{width: 100%;}
+        }
+        body {
+            font-family:arial;
+            margin-right: 10%;
+            background: url(../Background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            }
+            * {
+            box-sizing: border-box;
+        }
+
+    nav {
+        background-color:rgba(0,0,0,0.25);
+            }
+    p{margin: 25px;}
+    h1{margin: 25px;}
+    h2{margin:25px;}
+    h3{margin: 25px;}
+    .column {
+  float: left;
+  padding: 10px;
+  height:auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.code{
+  font-weight: bold;
+  color: #4682B4;
+  font-size: 4;
+  }
+  .syntax{
+    font-weight: 800;
+    font-style: oblique;
+    font-size: larger;
+    color: #4682B4;
+    }
+    .btn {background-color: transparent;
+    color: white;
+    border: none;
+    font-family: segoe ui;
+    font-weight: bolder;
+    padding: 15px;
+    width: 100%;
+    }        
+    .btn:hover {background-color: rgb(15, 140, 241);
+    color: white;
+    border: none;
+    transition: all 0.25s;
+    }
+</style>
+  </head>
+    <body>
+      <div class="row">
+      <div class="column" style="width: 20%;">
+      <table width="16%" style="position: fixed; background-color: rgba(0,0,0,0.25);">
+        <tr><td><img src="../Logo.jpg" width="100%"></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='../Home Page.html'">Home &#127968</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Intro.html'">Introduction</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='C VS C++.html'">C VS C++</button></td></tr>
+        <tr><td><font face="arial" color="#4682B4" style=" padding:15px; font-weight:800; font-style: oblique;"><center>Variables & Constants</center></font></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Data Types & Operators.html'">Data Types</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Statements.html'">Statements</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Functions.html'">Functions</button></td></tr>
+        </table>
+        </div>
+        <div class="column" style="width: 80%;">
+          <nav>
+            <ul>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../HTML/Intro.html'">HTML</button></li>
+              <li style="display: inline;"><font face="arial" color="#4682B4" style=" padding:15px; font-weight: bolder; font-style: oblique;">C++</font></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../JavaScript/Intro.html'">JavaScript</button></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../Python/Intro.html'">Python</button></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../Contact.html'">Contact &#9742</button></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../About.html'">About Us</button></li>
+            </ul>
+          </nav>
+        <h1><u>C++ Variables</u></h1>
+          <p>Variables are containers for storing data values.<br><br>
+          In C++, there are different types of variables (defined with different keywords), for example:</p>
+          <ul>
+            <li><span class="code">int</span> - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+            <li><span class="code">double</span>> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+            <li><span class="code">char</span> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+            <li><span class="code">string</span> - stores text, such as "Hello World". String values are surrounded by double quotes</li>
+            <li><span class="code">bool</span> - stores values with two states: true or false</li>
+          </ul>
+          <h2>Declaring Variables</h2>
+          <p>To create a variable, you must specify the type and assign it a value:</p>
+          <h3>Syntax</h3>
+          <p><span class="syntax">type variable = value;</span></p>
+          <p>Where type is one of C++ types (such as int), and variable is the name of the variable (such as x or myName). The equal sign is used to assign values to the variable.</p>
+          <p>To create a variable that should store a number, look at the following example:</p>
+          <p>Create a variable called myNum of type int and assign it the value 15:</p>
+          <p><span class="syntax">int myNum = 15;<br>
+            cout << myNum;</span>
+          </p>
+          <h2>C++ Constants</h2>
+          <p>However, you can add the <span class="code">const</span> keyword if you don't want others (or yourself) to override existing values (this will declare the variable as "constant", which means unchangeable and read-only):</p>
+          <h3>Example</h3>
+          <p><span class="synatx">const int myNum = 15;  // myNum will always be 15<br>
+            myNum = 10;  // error: assignment of read-only variable 'myNum'</span>
+          </p>
+          <h2>Other Types</h2>
+          <p>A demonstration of other data types:</p>
+          <p><span class="syntax">int myNum = 5;               // Integer (whole number without decimals)<br>
+            double myFloatNum = 5.99;    // Floating point number (with decimals)<br>
+            char myLetter = 'D';         // Character<br>
+            string myText = "Hello";     // String (text)<br>
+            bool myBoolean = true;       // Boolean (true or false)</span>
+          </p>
+      </div>
+    </body>
+</html>

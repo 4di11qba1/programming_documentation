@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>JS | Statements</title>
+    <style>
+      @media only screen and (max-width: 600px){
+        nav{width: 100%;}
+        .column{width: 100%;}
+        .btn{width: 100%;}
+        .btn:hover{width: 100%;}
+        .dropbtn1{width: 100%;}
+        .dropdown1{width: 100%;}
+        .dropdown1-content{width: 100%;}
+        .dropdown1:hover .dropbtn1{width: 100%;}
+        }
+        body {
+            font-family:arial;
+            margin-right: 10%;
+            background: url(../Background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            }
+            * {
+            box-sizing: border-box;
+        }
+
+    nav {
+        background-color:rgba(0,0,0,0.25);
+            }
+    li{display: inline;}
+    p{margin: 25px;}
+    h1{margin: 25px;}
+    h2{margin: 25px;}
+    h3{margin: 25px;}
+    h4{margin: 25px;}
+    .column {
+  float: left;
+  padding: 10px;
+  height:auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.code{
+  font-weight: bold;
+  color: #4682B4;
+  font-size: 4;
+  }
+  .syntax{
+    font-weight: 800;
+    font-style: oblique;
+    font-size: larger;
+    color: #4682B4;
+    }
+    .btn {background-color: transparent;
+    color: white;
+    border: none;
+    font-family: segoe ui;
+    font-weight: bolder;
+    padding: 15px;
+    width: 100%;
+    }        
+    .btn:hover {background-color: rgb(15, 140, 241);
+    color: white;
+    border: none;
+    transition: all 0.25s;
+    }
+</style>
+  </head>
+    <body>
+      <div class="row">
+      <div class="column" style="width: 20%;">
+      <table width="16%" style="position: fixed; background-color: rgba(0,0,0,0.25);">
+        <tr><td><img src="../Logo.jpg" width="100%"></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='../Home Page.html'">Home &#127968</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Intro.html'">Introduction</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='JavaScript & Java.html'">JavaScript VS Java</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Variables & Constants.html'">Variables & Constants</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Data Types.html'">Data Types</button></td></tr>
+        <tr><td><font face="arial" color="#4682B4" style=" padding:15px; font-weight:800; font-style: oblique;"><center>Statements</center></font></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Types of Functions.html'">Function Types</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Function Declaration.html'">Function Declaration</button></td></tr>
+        </table>
+        </div>
+        <div class="column" style="width: 80%;">
+          <nav>
+            <ul>
+              <li><button class="btn" style="width: auto;" onclick="window.location.href='../HTML/Intro.html'">HTML</button></li>
+              <li><button class="btn" style="width: auto;" onclick="window.location.href='../C++/Intro.html'">C++</button></li>
+                <li><font face="arial" color="#4682B4" style=" padding:15px; font-weight: bolder; font-style: oblique;">JavaScript</font></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../Python/Intro.html'">Python</button></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../Contact.html'">Contact &#9742</button></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../About.html'">About Us</button></li>
+            </ul>
+          </nav>
+          <h1><u>JavaScript Statements</u></h1>
+          <p>JavaScript statements are composed of:<br>
+            Values, Operators, Expressions, Keywords, and Comments.<br>
+            This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":
+          </p>
+          <p><span class="syntax">document.getElementById("demo").innerHTML = "Hello Dolly.";</span></p>
+          <p>Most JavaScript programs contain many JavaScript statements.<br>
+            The statements are executed, one by one, in the same order as they are written.<br>
+            JavaScript programs (and JavaScript statements) are often called JavaScript code.
+          </p>
+          <h2>Semicolons ;</h2>
+          <p>Semicolons separate JavaScript statements.<br>
+            Add a semicolon at the end of each executable statement:
+          </p>
+          <p><span class="syntax">var a, b, c;     // Declare 3 variables<br>
+            a = 5;           // Assign the value 5 to a<br>
+            b = 6;           // Assign the value 6 to b<br>
+            c = a + b;       // Assign the sum of a and b to c</span>
+            When separated by semicolons, multiple statements on one line are allowed.
+          </p>
+          <h2>else if Statement</h2>
+          <p>Use the <span class="code">else if</span> statement to specify a new condition if the first condition is false.</p>
+          <h3>Syntax</h3>    
+          <p><span class="syntax">if (condition1) {<br>
+            //  block of code to be executed if condition1 is true<br>
+            } else if (condition2) {<br>
+            //  block of code to be executed if the condition1 is false and condition2 is true<br>
+            } else {<br>
+            //  block of code to be executed if the condition1 is false and condition2 is false<br>
+            }</span>
+          </p>    
+          <h2>Loop Statment</h2>
+          <p>Loop statements are of many types(While and For are common)</p>
+          <h3>While Loop</h3>
+          <p>The while loop loops through a block of code as long as a specified condition is true.</p>
+          <p><span class="syntax">while (condition) {<br>
+            // code block to be executed<br>
+            }</span>
+          </p>
+          <h4>Example</h4>
+          <p><span class="syntax">while (i<10) {<br>
+            text += "The number is" +i;<br>
+            i++;<br>
+            }</span>
+          </p>
+          <h3>For Loop</h3>
+          <p>The for loop loops through a block of code for specified number of times.</p>
+          <p><span class="syntax">for (statement 1; statement 2; statement 3) {<br>
+            // code block to be executed<br>
+            }</span>
+          </p>
+          <p><b>Statement 1</b> is executed (one time) before the execution of the code block.<br>
+            <b>Statement 2</b> defines the condition for executing the code block.<br>
+            <b>Statement 3</b> is executed (every time) after the code block has been executed.
+          </p>
+          <h4>Example</h4>
+          <p><span class="syntax">for(i=0;i<5;i++;){<br>
+            text+="The number is"+i+"(br)";<br>
+            }</span>
+          </p>
+          <p>From the example above, you can read:</p>
+          <p>Statement 1 sets a variable before the loop starts (var i = 0).<br>
+             Statement 2 defines the condition for the loop to run (i must be less than 5).<br>
+             Statement 3 increases a value (i++) each time the code block in the loop has been executed.
+          </p>
+        </div>
+    </body>
+</html>

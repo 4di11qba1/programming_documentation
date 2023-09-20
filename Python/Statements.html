@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Python | Statements</title>
+    <style>
+      @media only screen and (max-width: 600px){
+        nav{width: 100%;}
+        .column{width: 100%;}
+        .btn{width: 100%;}
+        .btn:hover{width: 100%;}
+        .dropbtn1{width: 100%;}
+        .dropdown1{width: 100%;}
+        .dropdown1-content{width: 100%;}
+        .dropdown1:hover .dropbtn1{width: 100%;}
+        }
+        body {
+            font-family:arial;
+            margin-right: 10%;
+            background: url(../Background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            }
+            * {
+            box-sizing: border-box;
+        }
+
+    nav {
+        background-color:rgba(0,0,0,0.25);
+            }
+    li{display: inline;}
+    p{margin: 25px;}
+    h1{margin: 25px;}
+    h2{margin:25px;}
+    h3{margin: 25px;}
+    h4{margin: 25px;}
+    .column {
+  float: left;
+  padding: 10px;
+  height:auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.code{
+  font-weight: bold;
+  color: #4682B4;
+  font-size: 4;
+  }
+  .syntax{
+    font-weight: 800;
+    font-style: oblique;
+    font-size: larger;
+    color: #4682B4;
+    }
+    .btn {background-color: transparent;
+    color: white;
+    border: none;
+    font-family: segoe ui;
+    font-weight: bolder;
+    padding: 15px;
+    width: 100%;
+    }        
+    .btn:hover {background-color: rgb(15, 140, 241);
+    color: white;
+    border: none;
+    transition: all 0.25s;
+    }
+</style>
+  </head>
+    <body>
+      <div class="row">
+      <div class="column" style="width: 20%;">
+      <table width="16%" style="position: fixed; background-color: rgba(0,0,0,0.25);">
+        <tr><td><img src="../Logo.jpg" width="100%"></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='../Home Page.html'">Home &#127968</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Intro.html'">Introduction</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Python VS Ruby.html'">Python VS Ruby</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Variables & Constants.html'">Variables & Constants</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Data Types.html'">Data Types</button></td></tr>
+        <tr><td><font face="arial" color="#4682B4" style=" padding:15px; font-weight:800; font-style: oblique;"><center>Statements</center></font></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Functions.html'">Functions</button></td></tr>
+        </table>
+        </div>
+        <div class="column" style="width: 80%;">
+          <nav>
+            <ul>
+              <li><button class="btn" style="width: auto;" onclick="window.location.href='../HTML/Intro.html'">HTML</button></li>
+              <li><button class="btn" style="width: auto;" onclick="window.location.href='../C++/Intro.html'">C++</button></li>
+                </li> <li><button class="btn" style="width: auto;" onclick="window.location.href='../JavaScript/Intro.html'">JavaScript</button></li>
+               <li><font face="arial" color="#4682B4" style=" padding:15px; font-weight: bolder; font-style: oblique;">Python</font></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../Contact.html'">Contact &#9742</button></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../About.html'">About Us</button></li>
+            </ul>
+          </nav>
+          <h1><u>Python Statements</u></h1>
+          <h2>Python If Else</h2>
+          <h3>Python Conditions and If statements</h3>
+          <p>Python supports the usual logical conditions from mathematics:</p>
+          <ul>
+            <li>Equals: a == b</li>
+            <li>Not Equals: a != b</li>
+            <li>Less than: a < b</li>
+            <li>Less than or equal to: a <= b</li>
+            <li>Greater than: a > b</li>
+            <li>Greater than or equal to: a >= b</li>
+          </ul>
+          <p>These conditions can be used in several ways, most commonly in "if statements" and loops.<br>
+            An "if statement" is written by using the if keyword.
+          </p>
+          <h4>Example</h4>
+          <p><span class="syntax">a = 2<br>
+            b = 330<br>
+            print("A") if a > b else print("B")</span>
+          </p>
+          <h2>Loop Statements</h2>
+          <p>Loops are used to execute a black of statements for a number of times.</p>
+          <h3>While Loop</h3>
+          <p>With the while loop we can execute a set of statements as long as a condition is true.</p>
+          <h4>Example</h4>
+          <p>Print i as long as i is less than 6:</p>
+          <p><span class="syntax">i=1<br>
+             while i<6;<br>
+             print(i)<br>
+             i+=1
+          </span>
+          </p>
+          <h3>For Loop</h3>
+          <p>A <span class="code">for</span> loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).<br>
+            This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.<br>
+            With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+          </p>
+          <h4>Example</h4>
+          <p>Print each fruit in a fruit list</p>
+          <p><span class="syntax">fruits=["apple","banana","cherry"]<br>
+             for x in fruits:<br>
+             print(x);
+             </span>
+          </p>
+        </div>
+      </div>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>JS | Introduction</title>
+    <style>
+      @media only screen and (max-width: 600px){
+        nav{width: 100%;}
+        .column{width: 100%;}
+        .btn{width: 100%;}
+        .btn:hover{width: 100%;}
+        .dropbtn1{width: 100%;}
+        .dropdown1{width: 100%;}
+        .dropdown1-content{width: 100%;}
+        .dropdown1:hover .dropbtn1{width: 100%;}
+        }
+        body {
+            font-family:arial;
+            margin-right: 10%;
+            background: url(../Background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            }
+            * {
+            box-sizing: border-box;
+        }
+
+    nav {
+        background-color:rgba(0,0,0,0.25);
+            }
+    li{display: inline;}
+    p{margin: 25px;}
+    h1{margin: 25px;}
+    h2{margin: 25px;}
+    h3{margin: 25px;}
+    .column {
+  float: left;
+  padding: 10px;
+  height:auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.code{
+  font-weight: bold;
+  color: #4682B4;
+  font-size: 4;
+  }
+  .syntax{
+    font-weight: 800;
+    font-style: oblique;
+    font-size: larger;
+    color: #4682B4;
+    }
+    .btn {background-color: transparent;
+    color: white;
+    border: none;
+    font-family: segoe ui;
+    font-weight: bolder;
+    padding: 15px;
+    width: 100%;
+    }        
+    .btn:hover {background-color: rgb(15, 140, 241);
+    color: white;
+    border: none;
+    transition: all 0.25s;
+    }
+</style>
+  </head>
+    <body>
+      <div class="row">
+      <div class="column" style="width: 20%;">
+      <table width="16%" style="position: fixed; background-color: rgba(0,0,0,0.25);">
+        <tr><td><img src="../Logo.jpg" width="100%"></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='../Home Page.html'">Home &#127968</button></td></tr>
+        <tr><td><font face="arial" color="#4682B4" style=" padding:15px; font-weight:800; font-style: oblique;"><center>Introduction</center></font></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='JavaScript & Java.html'">JavaScript & Java</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Variables & Constants.html'">Variables & Constants</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Data Types.html'">Data Types</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Statements.html'">Statements</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Types of Functions.html'">Function Types</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Function Declaration.html'">Function Declaration</button></td></tr>
+        </table>
+        </div>
+        <div class="column" style="width: 80%;">
+          <nav>
+
+            <ul>
+              <li><button class="btn" style="width: auto;" onclick="window.location.href='../HTML/Intro.html'">HTML</button></li>
+              <li><button class="btn" style="width: auto;" onclick="window.location.href='../C++/Intro.html'">C++</button></li>
+                <li><font face="arial" color="#4682B4" style=" padding:15px; font-weight: bolder; font-style: oblique;">JavaScript</font></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../Python/Intro.html'">Python</button></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../Contact.html'">Contact &#9742</button></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../About.html'">About Us</button></li>
+            </ul>
+          </nav>
+          <h1><u>Introduction to JavaScript</u></h1>
+          <h2>JavaScript Can Change HTML Content</h2>
+          <p>One of many JavaScript HTML methods is <span class="code">getElementById()</span>.</p>
+          <h3>Example</h3>
+          <p>This example uses the method to "find" an HTML element (with id="demo") and changes the element content (innerHTML) to "Hello JavaScript":</p>
+          <p><span class="syntax">document.getElementById("demo").innerHTML = "Hello JavaScript";</span></p>
+          <p>JavaScript accepts both double and single quotes.</p>
+          <h2>JavaScript Can Change HTML Attribute Values</h2>
+          <p>In this example JavaScript changes the value of the src <span class="code">(source)</span> attribute of an <span class="code">(img)</span> tag:</p>
+          <div style="margin-left: 25px;"><button onclick="document.getElementById('myImage').src='Intro IMGs/ONbulb.jpg'">Turn on the light</button>
+          <img id="myImage" src="Intro IMGs/OFFbulb.jpg" style="width:100px">
+          <button onclick="document.getElementById('myImage').src='Intro IMGs/OFFbulb.jpg'">Turn off the light</button></div>
+          <p>The color of bulb will change if we press the buttons on its left and right.</p>
+          <h2>JavaScript Can Change HTML Styles (CSS)</h2>
+          <p>Changing the style of an HTML element, is a variant of changing an HTML attribute:</p>
+          <h3>Example</h3>
+          <p>This example will change font size and style of the text.</p>
+          <p><span class="syntax">document.getElementById("demo").style.fontSize = "35px";</span></p>
+          <h2>JavaScript Can Hide HTML Elements</h2>
+          <p>Hiding HTML elements can be done by changing the <span class="code">display</span> style:</p>
+          <h3>Example</h3>
+          <p><span class="syntax">document.getElementById("demo").style.display = "none";</span></p>
+          <h2>JavaScript Can Show HTML Elements</h2>
+          <p>Showing hidden HTML elements can also be done by changing the <span class="code">display</span> style:</p>
+          <p><span class="syntax">document.getElementById("demo").style.display = "block";</span></p>
+        </div>
+    </body>
+</html>

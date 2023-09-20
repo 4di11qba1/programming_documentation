@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>HTML | Lists</title>
+    <style>
+      @media only screen and (max-width: 600px){
+        nav{width: 100%;}
+        .column{width: 100%;}
+        .btn{width: 100%;}
+        .btn:hover{width: 100%;}
+        .dropbtn1{width: 100%;}
+        .dropdown1{width: 100%;}
+        .dropdown1-content{width: 100%;}
+        .dropdown1:hover .dropbtn1{width: 100%;}
+        }
+        body {
+            font-family:arial;
+            margin-right: 10%;
+            background: url(../Background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            }
+            * {
+            box-sizing: border-box;
+        }
+
+    nav {
+        background-color:rgba(0,0,0,0.25);
+            }
+    img{width:70%;}
+    li{display: inline;}
+    p{margin: 25px;}
+    h1{margin: 25px;}
+    h2{margin: 25px;}
+    h3{margin: 25px;}
+    img{margin-left:25px;}
+    .column {
+  float: left;
+  padding: 10px;
+  height:auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    .btn {background-color: transparent;
+    color: white;
+    border: none;
+    font-family: segoe ui;
+    font-weight: bolder;
+    padding: 15px;
+    width: 100%;
+    }        
+    .btn:hover {background-color: rgb(15, 140, 241);
+    color: white;
+    border: none;
+    transition: all 0.25s;
+    }
+</style>
+  </head>
+    <body>
+      <div class="row">
+      <div class="column" style="width: 20%;">
+      <table width="16%" style="position: fixed; background-color: rgba(0,0,0,0.25);">
+        <tr><td><img src="../Logo.jpg" style="width:80%;"></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='../Home Page.html'">Home &#127968</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Intro.html'">Introduction</button></td></tr>
+        <tr><td><font face="arial" color="#4682B4" style=" padding:15px; font-weight:800; font-style: oblique;"><center>Lists</center></font></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Graphics.html'">Graphics</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Tables.html'">Tables</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Linking.html'">Linking</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Frames.html'">Frames</button></td></tr>
+      </table>
+      </div>
+      <div class="column" style="width: 80%;">
+      <nav>
+        <ul>
+            <li><font face="arial" color="#4682B4" style=" padding:15px; font-weight: bolder; font-style: oblique;">HTML</font></li>
+            <li><button class="btn" style="width: auto;" onclick="window.location.href='../C++/Intro.html'">C++</button></li>
+            <li><button class="btn" style="width: auto;" onclick="window.location.href='../JavaScript/Intro.html'">JavaScript</button></li>
+            <li><button class="btn" style="width: auto;" onclick="window.location.href='../Python/Intro.html'">Python</button></li>
+            <li><button class="btn" style="width: auto;" onclick="window.location.href='../Contact.html'">Contact &#9742</button></li>
+            <li><button class="btn" style="width: auto;" onclick="window.location.href='../About.html'">About Us</button></li>
+        </ul>
+      </nav>
+      <h1><u>HTML Lists</u></h1>
+      <h2>HTML Lists</h2>
+      <img src="Lists IMGs/List Example.png">
+      <h2>Undordered HTML Lists</h2>
+      <p>An unordered list starts with the <font size="4" color="#4682B4"><b>(ul)</b></font> tag. Each list item starts with the <font size="4" color="#4682B4"><b>(li)</b></font> tag.</p>
+      <p>The list items will be marked with bullets (small black circles) by default:</p>
+      <img src="Lists IMGs/Unordered Lists Example.png">
+      <h2>Unordered HTML List - Choose List Item Marker</h2>
+      <p>The CSS <font size="4" color="#4682B4"><b>list-style-type</b></font> property is used to define the style of the list item marker:</p>
+      <table style="margin: 25px;" border="1">
+        <th width="20%" align="left"><font size="4">Value</font></th>
+        <th width="50%" align="left"><font size="4">Description</font></th>
+        <tr><td>disc</td><td>Sets the list item marker to a bullet (default)</td></tr>
+        <tr><td>circle</td><td>Sets the list item marker to a circle</td></tr>
+        <tr><td>square</td><td>Sets the list item marker to a square</td></tr>
+        <tr><td>none</td><td>The items wil not be marked</td></tr>
+      </table>
+      <h3>Example using Item Marker</h3>
+        <img src="Lists IMGs/List Style Type.png"><br>
+        <p><font size="4"><b>Note</b></font>: Just replace "circle" with "disc","square" or "none" to use those markers.</p>
+        <h2>Ordered HTML Lists</h2>
+        <p>An ordered list starts with the <font size="4" color="#4682B4"><b>(ol)</b></font> tag. Each list item starts with the <font size="4" color="#4682B4"><b>(li)</b></font> tag.</p>
+        <p>The list items will be marked with numbers by default:</p>
+        <img src="Lists IMGs/Ordered Lists Example.png">
+        <h2>Ordered HTML List - The Type Attribute</h2>
+        <p>The <font size="4" color="#4682B4"><b>type</b></font> attribute of the <font size="4" color="#4682B4"><b>(ol)</b></font> tag, defines the type of the list item marker:</p>
+        <table style="margin: 25px;" border="1">
+          <th width="20%" align="left"><font size="4">Type</font></th>
+          <th width="50%" align="left"><font size="4">Description</font></th>
+          <tr><td>type="1"</td><td>The list items will be numbered with numbers (default)</td></tr>
+          <tr><td>type="A"</td><td>The list items will be numbered with uppercase letters</td></tr>
+          <tr><td>type="a"</td><td>The list items will be numbered with lowercase letters</td></tr>
+          <tr><td>type="I"</td><td>The list items will be numbered with uppercase roman numbers</td></tr>
+          <tr><td>type="i"</td><td>The list items will be numbered with lowercase roman numbers</td></tr>
+        </table>
+        <p><font size="4"><b>Note</b></font>: Just write <font size="4" color="#4682B4"><b>type="A"</b></font> or whatever, within <font size="4" color="#4682B4"><b>(ol)</b></font> tag.</p>
+        <h2>HTML Description Lists</h2>
+        <p>HTML also supports description lists.</p>
+        <p>A description list is a list of terms, with a description of each term.</p>
+        <p>The <font size="4" color="#4682B4"><b>(dl)</b></font> tag defines the description list, the <font size="4" color="#4682B4"><b>(dt)</b></font> tag defines the term <font size="4" color="#4682B4"><b>(name)</b></font>, and the <font size="4" color="#4682B4"><b>(dd)</b></font> tag describes each term:</p>
+        <img src="Lists IMGs/Discription Lists Example.png">
+        <h2>Nested HTML Lists</h2>
+        <p>List can also be nested (lists inside lists):</p>
+        <h3>Coding:</h3>
+        <img src="Lists IMGs/Nested List Code.png">
+        <h3>Output:</h3>
+        <img src="Lists IMGs/Nested List Output.png">
+      </div>
+    </body>
+</html>

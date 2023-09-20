@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>HTML | Graphics</title>
+    <style>
+      @media only screen and (max-width: 600px){
+        nav{width: 100%;}
+        .column{width: 100%;}
+        .btn{width: 100%;}
+        .btn:hover{width: 100%;}
+        .dropbtn1{width: 100%;}
+        .dropdown1{width: 100%;}
+        .dropdown1-content{width: 100%;}
+        .dropdown1:hover .dropbtn1{width: 100%;}
+        }
+        body {
+            font-family:arial;
+            margin-right: 10%;
+            background: url(../Background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            }
+            * {
+            box-sizing: border-box;
+        }
+
+    nav {
+        background-color:rgba(0,0,0,0.25);
+            }
+    li{display: inline;}
+    p{margin: 25px;}
+    h1{margin: 25px;}
+    h2{margin:25px;}
+    h3{margin: 25px;}
+    img{margin-left:25px;}
+    .column {
+  float: left;
+  padding: 10px;
+  height:auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.code{
+  font-weight: bold;
+  color: #4682B4;
+  font-size: 4;
+  }
+  .syntax{
+    font-weight: 800;
+    font-style: oblique;
+    font-size: larger;
+    color: #4682B4;
+    }
+    .btn {background-color: transparent;
+    color: white;
+    border: none;
+    font-family: segoe ui;
+    font-weight: bolder;
+    padding: 15px;
+    width: 100%;
+    }        
+    .btn:hover {background-color: rgb(15, 140, 241);
+    color: white;
+    border: none;
+    transition: all 0.25s;
+    }
+</style>
+  </head>
+      <div class="row">
+      <div class="column" style="width: 20%;">
+      <table width="16%" style="position: fixed; background-color: rgba(0,0,0,0.25);">
+        <tr><td><img src="../Logo.jpg" width="80%"></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='../Home Page.html'">Home &#127968</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Intro.html'">Introduction</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Lists.html'">Lists</button></td></tr>
+        <tr><td><font face="arial" color="#4682B4" style=" padding:15px; font-weight:800; font-style: oblique;"><center>Graphics</center></font></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Tables.html'">Tables</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Linking.html'">Linking</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Frames.html'">Frames</button></td></tr>
+        </table>
+        </div>
+        <div class="column" style="width: 80%;">
+          <nav>
+            <ul>
+                <li><font face="arial" color="#4682B4" style=" padding:15px; font-weight: bolder; font-style: oblique;">HTML</font></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../C++/Intro.html'">C++</button></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../JavaScript/Intro.html'">JavaScript</button></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../Python/Intro.html'">Python</button></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../Contact.html'">Contact &#9742</button></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../About.html'">About Us</button></li>
+            </ul>
+          </nav>
+          <h1><u>HTML Images</u></h1>
+          <p>Images can improve the design and the appearance of a web page.</p>
+          <p>In HTML, images are defined with the <span class="code">(img)</span> tag.</p>
+          <p>The <span class="code">(img)</span> tag is empty, it contains attributes only, and does not have a closing tag.</p>
+          <p>The <span class="code">src</span> attribute specifies the URL (web address) of the image:</p>
+          <p><span class="syntax">(img src="url")</span></p>
+          <h2>The alt Attribute</h2>
+          <p>The <span class="code">alt</span> attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).</p>
+          <p>The value of the <span class="code">alt</span> attribute should describe the image:</p>
+          <p><span class="syntax">(img src="url" alt="Flowers in Chania")</span></p>
+          <p>If a browser cannot find an image, it will display the value of the <span class="code">alt</span> attribute.</p>
+          <h2>Image Size - Width and Height</h2>
+          <p>You can use the <span class="code">style</span> attribute to specify the width and height of an image.</p>
+          <p><span class="syntax">(img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;")</span></p>
+          <p><span style="font-weight: bold;">Note</span>: You can also use other units instead of pixels.</p>
+          <h1><u>HTML Graphics</u></h1>
+          <h2>SVG</h2>
+          <p>The HTML <span class="code">svg</span> element allows vector based graphics in HTML:</p>
+          <img src="Graphics IMGs/SVG Shapes.png" width="90%">
+          <h2>HTML Canvas</h2>
+          <p>The HTML <span class="code">(canvas)</span> element can be used to draw graphics on a web page:</p>
+          <p>The graphic below is created with <span class="code">(canvas)</span>:</p>
+          <img src="Graphics IMGs/Canvas Shapes.png" width="70%">
+          <p>It shows four elements: a red rectangle, a gradient rectangle, a multicolor rectangle, and a multicolor text.</p>
+        </div>
+    </body>
+</html>

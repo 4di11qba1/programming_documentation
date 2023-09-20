@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>HTML | Introduction</title>
+    <style>
+      @media only screen and (max-width: 600px){
+        nav{width: 100%;}
+        .column{width: 100%;}
+        .btn{width: 100%;}
+        .btn:hover{width: 100%;}
+        .dropbtn1{width: 100%;}
+        .dropdown1{width: 100%;}
+        .dropdown1-content{width: 100%;}
+        .dropdown1:hover .dropbtn1{width: 100%;}
+        }
+        body {
+            font-family:arial;
+            margin-right: 10%;
+            background: url(../Background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            }
+            * {
+            box-sizing: border-box;
+        }
+
+    nav {
+        background-color:rgba(0,0,0,0.25);
+            }
+    p{margin: 25px;}
+    h1{margin: 25px;}
+    h3{margin: 25px;}
+    img{margin-left:25px;}
+    .column {
+  float: left;
+  padding: 10px;
+  height:auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    .btn {background-color: transparent;
+    color: white;
+    border: none;
+    font-family: segoe ui;
+    font-weight: bolder;
+    padding: 15px;
+    width: 100%;
+    }        
+    .btn:hover {background-color: rgb(15, 140, 241);
+    color: white;
+    border: none;
+    transition: all 0.25s;
+    }
+</style>
+  </head>
+    <body>
+      <div class="row">
+      <div class="column" style="width: 20%;">
+      <table width="16%" style="position: fixed; background-color: rgba(0,0,0,0.25);">
+        <tr><td><img src="../Logo.jpg" width="80%"></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='../Home Page.html'">Home &#127968</button></td></tr>
+        <tr><td><font face="arial" color="#4682B4" style=" padding:15px; font-weight: bolder; font-style: oblique;"><center>Introduction</center></font></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Lists.html'">Lists</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Graphics.html'">Graphics</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Tables.html'">Tables</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Linking.html'">Linking</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Frames.html'">Frames</button></td></tr>
+      </table>
+      </div>
+      <div class="column" style="width: 80%;">
+      <nav>
+        <ul>
+            <li style="display:inline"><font face="arial" color="#4682B4" style=" padding:15px; font-weight: bolder; font-style: oblique;">HTML</font></li>
+            <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../C++/Intro.html'">C++</button></li>
+            <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../JavaScript/Intro.html'">JavaScript</button></li>
+            <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../Python/Intro.html'">Python</button></li>
+            <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../Contact.html'">Contact &#9742</button></li>
+            <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../About.html'">About Us</button></li>
+        </ul>
+      </nav>
+        <h1><u>Introduction to HTML</u></h1>
+        <h3>What is HTML?</h3>
+        <p>HTML is the standard markup language for creating Web pages.</p>
+        <ul>
+            <li>HTML stands for Hyper Text Markup Language</li>
+            <li>HTML describes the structure of a Web page</li>
+            <li>HTML consists of a series of elements</li>
+            <li>HTML elements tell the browser how to display the content</li>
+            <li>HTML elements are represented by tags</li>
+            <li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on</li>
+            <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+        </ul>
+        <h3>HTML Tags</h3>
+        <p>HTML tags are element names surrounded by angle brackets:<br><font size="4" color="#4682B4"><b><br>(tag)content goes here...(/tag)</font></b></p>
+        <ul>
+            <li>HTML tags normally come in pairs like <font size="4" color="#4682B4">(p)</font> and <font size="4" color="#4682B4">(/p)</font></li>
+            <li>The first tag in a pair is the <font size="4" color="#4682B4"><b>start tag or opening tag</b></font>, the second tag is the <font size="4" color="#4682B4"><b>end tag or closing tag</b></font></li>
+            <li>The end tag is written like the start tag, but with a <font size="4" color="#4682B4"><b>forward slash</b></font> inserted before the tag name</li>
+        </ul>
+        <h3>Web Browsers</h3>
+        <p>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them.<br>
+
+            The browser does not display the HTML tags, but uses them to determine how to display the document</p>
+            <h3>HTML Page Structure</h3>
+            <p>Below is a visualization of an HTML page structure:</p>
+            <img src="Intro IMGs/Page Structure.png" width="70%">
+            <h3>HTML Versions</h3>
+            <p>Since the early days of the web, there have been many versions of HTML:</p>
+            <table border="1" style="margin-left: 25px;" width="70%">
+                <tr>
+                    <th align="left">Versions</td>
+                    <th align="left">Year</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>1991</td>
+                </tr>
+                <tr>
+                    <td>HTML 2.0</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>HTMML 3.2</td>
+                    <td>1997</td>
+                </tr>
+                <tr>
+                    <td>HTML 4.01</td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td>XHTML</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>HTML5</td>
+                    <td>2014</td>
+                </tr>
+            </table>
+          </div>
+        </div>
+    </body>
+</html>

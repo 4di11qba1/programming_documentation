@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>C++ | Statements</title>
+    <style>
+      @media only screen and (max-width: 600px){
+        nav{width: 100%;}
+        .column{width: 100%;}
+        .btn{width: 100%;}
+        .btn:hover{width: 100%;}
+        .dropbtn1{width: 100%;}
+        .dropdown1{width: 100%;}
+        .dropdown1-content{width: 100%;}
+        .dropdown1:hover .dropbtn1{width: 100%;}
+        }
+        body {
+            font-family:arial;
+            margin-right: 10%;
+            background: url(../Background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            }
+            * {
+            box-sizing: border-box;
+        }
+
+    nav {
+        background-color:rgba(0,0,0,0.25);
+            }
+    p{margin: 25px;}
+    h1{margin: 25px;}
+    h2{margin:25px;}
+    h3{margin: 25px;}
+    h4{margin:25px;}
+    .column {
+  float: left;
+  padding: 10px;
+  height:auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.code{
+  font-weight: bold;
+  color: #4682B4;
+  font-size: 4;
+  }
+  .syntax{
+    font-weight: 800;
+    font-style: oblique;
+    font-size: larger;
+    color: #4682B4;
+    }
+    .btn {background-color: transparent;
+    color: white;
+    border: none;
+    font-family: segoe ui;
+    font-weight: bolder;
+    padding: 15px;
+    width: 100%;
+    }        
+    .btn:hover {background-color: rgb(15, 140, 241);
+    color: white;
+    border: none;
+    transition: all 0.25s;
+    }
+</style>
+  </head>
+    <body>
+      <div class="row">
+      <div class="column" style="width: 20%;">
+      <table width="16%" style="position: fixed; background-color: rgba(0,0,0,0.25);">
+        <tr><td><img src="../Logo.jpg" width="100%"></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='../Home Page.html'">Home &#127968</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Intro.html'">Introduction</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='C VS C++.html'">C VS C++</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Variables & Constants.html'">Variables & Constants</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Data Types & Operators.html'">Data Types</button></td></tr>
+        <tr><td><font face="arial" color="#4682B4" style=" padding:15px; font-weight:800; font-style: oblique;"><center>Statements</center></font></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Functions.html'">Functions</button></td></tr>
+        </table>
+        </div>
+        <div class="column" style="width: 80%;">
+          <nav>
+            <ul>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../HTML/Intro.html'">HTML</button></li>
+              <li style="display: inline;"><font face="arial" color="#4682B4" style=" padding:15px; font-weight: bolder; font-style: oblique;">C++</font></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../JavaScript/Intro.html'">JavaScript</button></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../Python/Intro.html'">Python</button></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../Contact.html'">Contact &#9742</button></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../About.html'">About Us</button></li>
+            </ul>
+          </nav>
+        <h1><u>C++ Statements</u></h1>
+        <p>There are many statements in C++ but the famous one's are:</p>
+        <ul>
+          <li>If Else</li>
+          <li>Loop</li>
+        </ul>
+        <h2>The else if Statement</h2>
+        <p>The If Else statement is used to execute a block of code if a certain condition is true and execute another block if the condition is false.</p>
+        <h4>Syntax</h4>
+        <p><span class="syntax">if (condition1) {<br>
+          // block of code to be executed if condition1 is true<br>
+          } else if (condition2) {<br>
+          // block of code to be executed if the condition1 is false and condition2 is true<br>
+          } else {<br>
+          // block of code to be executed if the condition1 is false and condition2 is false<br>
+          }</span>
+        </p>
+        <h4>Example</h4>
+        <p><span class="syntax">int time = 22;<br>
+          if (time < 10) {<br>
+          cout <<"Good morning. ";<br>
+          } else if (time <20) {<br>
+          cout<<"Good day . " ;}<br>
+          else if{<br>
+          cout<<"Good evening. "}<br>
+          // Outputs "Good evening. "</span>
+        </p>
+        <h2>Loops</h2>
+        <p>Loops are used to execute statements for a number of times</p>
+        <p>There are two common types of Loop:</p>
+        <ul>
+          <li>While</li>
+          <li>For</li>
+        </ul>
+        <h3>While Loop</h3>
+        <p>While Loops is used to execute the statements until a certain condition remains true.</p>
+        <h4>Syntax</h4>
+        <p><span class="synatx">while (condition) {<br>
+          // code block to be executed<br>
+          }</span>
+        </p>
+        <p>In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less than 5:</p>
+        <h4>Example</h4>
+        <p><span class="syntax">int i=0;<br>
+        while(i<5){<br>
+          cout<<i<<"\n";<br>
+          i++;<br>
+        }
+        </span>
+        </p>
+        <h3>For Loop</h3>
+        <p>When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:</p>
+        <h4>Syntax</h4>
+        <p><span class="syntax">for (statement 1; statement 2; statement 3) {<br>
+          // code block to be executed<br>
+          }</span>
+        </p>
+        <p><span class="code">Statement 1</span> is executed (one time) before the execution of the code block.<br><br>
+          <span class="code">Statement 2</span> defines the condition for executing the code block.<br><br>
+          <span class="code">Statement 3</span> is executed (every time) after the code block has been executed.
+        </p>
+        <p>The example below will print the numbers 0 to 4:</p>
+        <h4>Example</h4>
+        <p><span class="syntax">for (int i = 0; i < 5; i++) {<br>
+           cout << i << "\n";<br>
+           }</span>
+        </p>
+      </div>
+    </body>
+</html>

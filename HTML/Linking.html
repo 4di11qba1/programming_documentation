@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>HTML | Linking</title>
+    <style>
+      @media only screen and (max-width: 600px){
+        nav{width: 100%;}
+        .column{width: 100%;}
+        .btn{width: 100%;}
+        .btn:hover{width: 100%;}
+        .dropbtn1{width: 100%;}
+        .dropdown1{width: 100%;}
+        .dropdown1-content{width: 100%;}
+        .dropdown1:hover .dropbtn1{width: 100%;}
+        }
+        body {
+            font-family:arial;
+            margin-right: 10%;
+            background: url(../Background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            }
+            * {
+            box-sizing: border-box;
+        }
+
+    nav {
+        background-color:rgba(0,0,0,0.25);
+            }
+    
+    p{margin: 25px;}
+    h1{margin: 25px;}
+    h2{margin: 25px;}
+    h3{margin: 25px;}
+    .column {
+  float: left;
+  padding: 10px;
+  height:auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.code{
+  font-weight: bold;
+  color: #4682B4;
+  font-size: 4;
+  }
+  .syntax{
+    font-weight: 800;
+    font-style: oblique;
+    font-size: larger;
+    color: #4682B4;
+    }
+    .btn {background-color: transparent;
+    color: white;
+    border: none;
+    font-family: segoe ui;
+    font-weight: bolder;
+    padding: 15px;
+    width: 100%;
+    }        
+    .btn:hover {background-color: rgb(15, 140, 241);
+    color: white;
+    border: none;
+    transition: all 0.25s;
+    }
+</style>
+  </head>
+    <body>
+      <div class="row">
+      <div class="column" style="width: 20%;">
+      <table width="16%" style="position: fixed; background-color: rgba(0,0,0,0.25);">
+        <tr><td><img src="../Logo.jpg" width="100%"></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='../Home Page.html'">Home &#127968</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Intro.html'">Introduction</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Lists.html'">Lists</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Graphics.html'">Graphics</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Tables.html'">Tables</button></td></tr>
+        <tr><td><font face="arial" color="#4682B4" style=" padding:15px; font-weight:800; font-style: oblique;"><center>Linking</center></font></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Frames.html'">Frames</button></td></tr>
+        </table>
+        </div>
+        <div class="column" style="width: 80%;">
+          <nav>
+            <ul>
+                <li style="display: inline;"><font face="arial" color="#4682B4" style=" padding:15px; font-weight: bolder; font-style: oblique;">HTML</font></li>
+                <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../C++/Intro.html'">C++</button></li>
+                <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../JavaScript/Intro.html'">JavaScript</button></li>
+                <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../Python/Intro.html'">Python</button></li>
+                <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../Contact.html'">Contact &#9742</button></li>
+                <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../About.html'">About Us</button></li>
+            </ul>
+          </nav>
+          <h1><u>HTML Links</u></h1>
+          <p>HTML allows linking to other HTML documents as well as images. Clicking on a section of text or an image in one webpage will open as entire webpage or an image. This text is called HYPERTEXT, a HYPERLINK, or a HOTSPOT.</p>
+          <p>The browser distinguishes Hyperlinks from normal text. Every Hyperlink,
+            <ul>
+              <li>Appears blue in color</li>
+              <li>The hyperlink text/image is underlined</li>
+              <li>When the pointer is placed on it, it changes into the form of a hand</li>
+            </ul></p>
+          <p>The blue color, which appears by default, can be over-ridden. To change these link colors, there are some attributes.</p>
+          <h2>Linking Attributes</h2>
+          <p>The attibutes for linking can be used with the <span class="code">(body)</span> tag. These are:</p>
+          <table border="1" style="margin-left: 25px;">
+          <tr><th>Attribute</th><th>Description</th></tr>
+          <tr><td>Link</td><td>Changes the color of the hyperlink</td></tr>
+          <tr><td>ALink</td><td>Changes the color of the hyperlink that is activated</td></tr>
+          <tr><td>VLink</td><td>Changes the color of the hyperlink that is already visited</td></tr>
+          </table>
+          <p>Links are created in a webpage using <span class="code">(a) (/a)</span> tags. Anything written within it becomes a Hyperlink. Following is the syntax of the hyperlink tag.</p>
+          <p><span class="syntax">(a href="filename.html")</span></p>
+          <p>Hyperlinks can of two types:
+            <ul>
+              <li>links to an external document</li>
+              <li>links to a specific place within the same document</li>
+            </ul>
+          </p>
+          <p>The following example demonstrate the use of <span class="code">(a) (/a)</span> tag:</p>
+          <h3>Coding</h3>
+          <p><span class="syntax">(a href="#")Google(/a)<br>
+            (a href="#")Youtube(/a)<br>
+            (a href="#")Facebook(/a)</span>
+          </p>
+          <h3>Output</h3>
+          <div style="margin-left: 25px;"><a href="#" style="color: #4682B4;">Google</a>
+          <a href="#" style="color: #4682B4;">Youtube</a>
+          <a href="#" style="color: #4682B4;">Facebook</a>
+          </div>
+        </div>
+    </body>
+</html>

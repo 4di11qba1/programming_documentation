@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>HTML | Tables</title>
+    <style>
+      @media only screen and (max-width: 600px){
+        nav{width: 100%;}
+        .column{width: 100%;}
+        .btn{width: 100%;}
+        .btn:hover{width: 100%;}
+        .dropbtn1{width: 100%;}
+        .dropdown1{width: 100%;}
+        .dropdown1-content{width: 100%;}
+        .dropdown1:hover .dropbtn1{width: 100%;}
+        }
+        body {
+            font-family:arial;
+            margin-right: 10%;
+            background: url(../Background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            }
+            * {
+            box-sizing: border-box;
+        }
+
+    nav {
+        background-color:rgba(0,0,0,0.25);
+            }
+    li{display: inline;}
+    p{margin: 25px;}
+    h1{margin: 25px;}
+    h2{margin:25px;}
+    h3{margin: 25px;}
+    img{margin-left:25px;}
+    .column {
+  float: left;
+  padding: 10px;
+  height:auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.code{
+  font-weight: bold;
+  color: #4682B4;
+  font-size: 4;
+  }
+  .syntax{
+    font-weight: 800;
+    font-style: oblique;
+    font-size: larger;
+    color: #4682B4;
+    }
+    .btn {background-color: transparent;
+    color: white;
+    border: none;
+    font-family: segoe ui;
+    font-weight: bolder;
+    padding: 15px;
+    width: 100%;
+    }        
+    .btn:hover {background-color: rgb(15, 140, 241);
+    color: white;
+    border: none;
+    transition: all 0.25s;
+    }
+</style>
+  </head>
+    <body>
+      <div class="row">
+      <div class="column" style="width: 20%;">
+      <table width="16%" style="position: fixed; background-color: rgba(0,0,0,0.25);">
+        <tr><td><img src="../Logo.jpg" width="80%"></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='../Home Page.html'">Home &#127968</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Intro.html'">Introduction</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Lists.html'">Lists</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Graphics.html'">Graphics</button></td></tr>
+        <tr><td><font face="arial" color="#4682B4" style=" padding:15px; font-weight:800; font-style: oblique;"><center>Tables</center></font></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Linking.html'">Linking</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Frames.html'">Frames</button></td></tr>
+        </table>
+        </div>
+        <div class="column" style="width: 80%;">
+          <nav>
+            <ul>
+                <li><font face="arial" color="#4682B4" style=" padding:15px; font-weight: bolder; font-style: oblique;">HTML</font></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../C++/Intro.html'">C++</button></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../JavaScript/Intro.html'">JavaScript</button></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../Python/Intro.html'">Python</button></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../Contact.html'">Contact &#9742</button></li>
+                <li><button class="btn" style="width: auto;" onclick="window.location.href='../About.html'">About Us</button></li>
+            </ul>
+          </nav>
+          <h1><u>HTML Tables</u></h1>
+          <p>A table is a two dimensional matrix consisting of rows and columns. Tables are intended for displaying data in columns on a webpage. All table related tags are included between the <span class="code">(table) (/table)</span> tags. Each row of a table is described between the <span class="code">(tr) (/tr)</span> tags. Each column of a table is described between the <span class="code">(td) (/td)</span> tags.</p>
+          <h2>Table Attributes</h2>
+          <p>The attributes that can be included in a <span class="code">(table)</span> tag are:</p>
+          <table style="margin-left: 25px;" border="1">
+            <tr><th style="width: 20%;">Attribute</th><th style="width: 70%;">Description</th></tr>
+            <tr><td>ALIGN</td><td>Horizontal alignment is controlled by the ALIGN attribute. It can be set to LEFT,CENTER or RIGHT</td></tr>
+            <tr><td>VALIGN</td><td>Vertical alignment is controlled by the VALIGN attribute. It can be set to TOP,MIDDLE or BOTTOM</td></tr>
+            <tr><td>WIDTH</td><td>Sets the width of the table to a specific number of pixels or percentage.</td></tr>
+            <tr><td>BORDER</td><td>Controls the border to be placed around the table.</td></tr>
+            <tr><td>CELLPADDING</td><td>Controls the distance between the data in a cell and the boundaries of the cell.</td></tr>
+            <tr><td>CELLSPACING</td><td>Controls the distance between rows and columns.</td></tr>
+            <tr><td>COLSPAN</td><td>Controls the number of columns that a specific cell will occupy.</td></tr>
+            <tr><td>ROWSPAN</td><td>Controls the number of columns that a specific cell will occupy.</td></tr>
+          </table>
+          <h2>The Caption Tag</h2>
+          <p>Captions are the headings that represent the type of information in the table. Captions are the given inside <span class="code">(caption) (/caption)</span> tags.</p>
+          <p>The following coding will demonstrate the use of <span class="code">(table) (/table)</span> tag.</p>
+          <h3>Coding</h3>
+          <img src="Tables IMGs/Table Code.png" width="50%">
+          <h3>Output</h3>
+          <img src="Tables IMGs/Table Output.png">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+  <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>C++ | Functions</title>
+    <style>
+      @media only screen and (max-width: 600px){
+        nav{width: 100%;}
+        .column{width: 100%;}
+        .btn{width: 100%;}
+        .btn:hover{width: 100%;}
+        .dropbtn1{width: 100%;}
+        .dropdown1{width: 100%;}
+        .dropdown1-content{width: 100%;}
+        .dropdown1:hover .dropbtn1{width: 100%;}
+        }
+        body {
+            font-family:arial;
+            margin-right: 10%;
+            background: url(../Background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            }
+            * {
+            box-sizing: border-box;
+        }
+
+    nav {
+        background-color:rgba(0,0,0,0.25);
+            }
+    p{margin: 25px;}
+    h1{margin: 25px;}
+    h2{margin:25px;}
+    h3{margin: 25px;}
+    .column {
+  float: left;
+  padding: 10px;
+  height:auto;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.code{
+  font-weight: bold;
+  color: #4682B4;
+  font-size: 4;
+  }
+  .syntax{
+    font-weight: 800;
+    font-style: oblique;
+    font-size: larger;
+    color: #4682B4;
+    }
+    .btn {background-color: transparent;
+    color: white;
+    border: none;
+    font-family: segoe ui;
+    font-weight: bolder;
+    padding: 15px;
+    width: 100%;
+    }        
+    .btn:hover {background-color: rgb(15, 140, 241);
+    color: white;
+    border: none;
+    transition: all 0.25s;
+    }
+</style>
+  </head>
+    <body>
+      <div class="row">
+      <div class="column" style="width: 20%;">
+      <table width="16%" style="position: fixed; background-color: rgba(0,0,0,0.25);">
+        <tr><td><img src="../Logo.jpg" width="100%"></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='../Home Page.html'">Home &#127968</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Intro.html'">Introduction</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='C VS C++.html'">C VS C++</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Variables & Constants.html'">Variables & Constants</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Data Types & Operators.html'">Data Types</button></td></tr>
+        <tr><td><button class="btn" onclick="window.location.href='Statements.html'">Statements</button></td></tr>
+        <tr><td><font face="arial" color="#4682B4" style=" padding:15px; font-weight:800; font-style: oblique;"><center>Functions</center></font></td></tr>
+        </table>
+        </div>
+        <div class="column" style="width: 80%;">
+          <nav>
+            <ul>
+              <li style="display:inline"><button class="btn" style="width: auto;" onclick="window.location.href='../HTML/Intro.html'">HTML</button></li>
+              <li style="display:inline"><font face="arial" color="#4682B4" style=" padding:15px; font-weight: bolder; font-style: oblique;">C++</font></li>
+              <li style="display:inline"><button class="btn" style="width: auto;" onclick="window.location.href='../JavaScript/Intro.html'">JavaScript</button></li>
+              <li style="display:inline"><button class="btn" style="width: auto;" onclick="window.location.href='../Python/Intro.html'">Python</button></li>
+              <li style="display:inline"><button class="btn" style="width: auto;" onclick="window.location.href='../Contact.html'">Contact &#9742</button></li>
+              <li style="display: inline;"><button class="btn" style="width: auto;" onclick="window.location.href='../About.html'">About Us</button></li>
+            </ul>
+          </nav>
+        <h1><u>C++ Functions</u></h1>
+        <p>A function is a block of code which only runs when it is called.<br><br>
+          You can pass data, known as parameters, into a function.<br><br>          
+          Functions are used to perform certain actions, and they are important for reusing code: Define the code once, and use it many times.
+        </p>
+        <h2>Create a Function</h2>
+        <p>C++ provides some pre-defined functions, such as main(), which is used to execute code. But you can also create your own functions to perform certain actions.</p>
+        <p>To create (often referred to as declare) a function, specify the name of the function, followed by parentheses ():</p>
+        <h3>Syntax</h3>
+        <p><span class="syntax">void myFunction() {<br>
+          // code to be executed<br>
+          }</span>
+        </p>
+        <h2>Call a Function</h2>
+        <p>Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are called.<br><br>
+           To call a function, write the function's name followed by two parentheses () and a semicolon ;<br><br>
+           In the following example, myFunction() is used to print a text (the action), when it is called:
+        </p>
+        <h3>Example</h3>
+        <p><span class="syntax">// Create a function<br>
+          void myFunction() {<br>
+          cout << "I just got executed! " ;<br>
+          }<br>
+          int main() {<br>
+          myFunction(); // call the function<br>
+          return 0;<br>
+          }<br>
+          // Outputs "I just got executed! "</span>
+        </p>
+        <h2>Function Declaration and Definition</h2>
+        <p>A C++ function consist of two parts:</p>
+        <ul>
+          <li>Declaration: the function's name, return type, and parameters (if any)</li>
+          <li>Definition: the body of the function (code to be executed)</li>
+        </ul>
+        <p><span class="code">Note</span>: If a user-defined function, such as myFunction() is declared after the main() function, an error will occur. It is because C++ works from top to bottom; which means that if the function is not declared above main(), the program is unaware of it:</p>
+        <h3>Example</h3>
+        <p><span class="syntax">int main() <br>
+          myFunction();<br>
+          return 0,<br>
+          void myFunction() {<br>
+          cout << "I just got executed! " ,<br>
+          // Error</span>
+        </p>
+      </div>
+    </body>
+</html>
